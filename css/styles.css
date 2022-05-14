@@ -42,6 +42,13 @@
   --portf-select-bth-text: #ffffff;
   --portf-overlay-bkgd-color: rgba(33, 150, 243, 0.9);
   --portf-overlay-text: #ffffff;
+  --color-2196f3: #2196f3;
+  --color-212121:#212121;
+  --color-757575:#757575;
+  --color-ffffff:#ffffff;
+  --color-afb1b8:#afb1b8;
+  --color-0000001a:#0000001a;
+  --color-afb1b8:#afb1b8;
 }
 
 body {
@@ -351,7 +358,7 @@ img {
   width: 30px;
   height: 30px;
   padding: 0;
-  border: 1px solid #0000001a;
+  border: 1px solid var(--color-0000001a);
   border-radius: 50%;
   cursor: pointer;
   background-color: inherit;
@@ -371,7 +378,7 @@ img {
 
 .close-button:hover,
 .close-button:focus .hghh {
-  fill: #2196f3;
+  fill: var(--color-2196f3);
 }
 
 .form-title {
@@ -380,11 +387,9 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-
+  line-height: 1.15;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--color-212121);
 }
 
 .section-input label {
@@ -394,10 +399,9 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
-  /* identical to box height */
+  line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--color-757575);
 }
 
 input,
@@ -454,6 +458,10 @@ textarea {
   cursor: pointer;
 }
 
+.checkbox-label a{
+  color: var(--color-2196f3);
+}
+
 .checkbox-icon {
   position: absolute;
   top: 50%;
@@ -461,7 +469,7 @@ textarea {
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--color-212121);
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -479,14 +487,14 @@ textarea {
 
 .checkbox-input:checked + .checkbox-icon {
   border-color: transparent;
-  background-color: #2196f3;
+  background-color: var(--color-2196f3);
 }
 
 .btn-submit {
   margin-left: 124px;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--color-2196f3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -495,10 +503,9 @@ textarea {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--color-ffffff);
   cursor: pointer;
 }
 
@@ -506,21 +513,21 @@ textarea {
 .input-area input:hover,
 textarea:focus,
 textarea:hover {
-  border-color: #2196f3;
+  border-color: var(--color-2196f3);
 }
 
 .input-area input:not(:placeholder-shown) ~ .modal-icon {
-  fill: #2196f3;
+  fill: var(--color-2196f3);
 }
 
 .input-area input:not(:placeholder-shown),
 textarea:not(:placeholder-shown) {
-  border-color: #2196f3;
+  border-color: var(--color-2196f3);
 }
 
 .input-area input:focus ~ .modal-icon,
 .input-area input:hover ~ .modal-icon {
-  fill: #2196f3;
+  fill: var(--color-2196f3);
 }
 
 /* ------------------ABOUT------------------ */
@@ -616,7 +623,7 @@ textarea:not(:placeholder-shown) {
   min-width: 100%;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -720,7 +727,7 @@ textarea:not(:placeholder-shown) {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -738,7 +745,7 @@ textarea:not(:placeholder-shown) {
 .clients-link {
   fill: var(--soc-link-color-fist);
   display: block;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-afb1b8);
   box-sizing: border-box;
   border-radius: 4px;
   width: 170px;
@@ -786,7 +793,7 @@ textarea:not(:placeholder-shown) {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--soc-link-color-third);
@@ -903,7 +910,7 @@ textarea:not(:placeholder-shown) {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   /* identical to box height, or 125% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -920,7 +927,7 @@ textarea:not(:placeholder-shown) {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   /* identical to box height, or 125% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -935,7 +942,7 @@ textarea:not(:placeholder-shown) {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--color-2196f3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -946,11 +953,11 @@ textarea:not(:placeholder-shown) {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   /* identical to box height, or 188% */
   text-align: left;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--color-ffffff);
 }
 
 .input:focus + .label,
@@ -1096,7 +1103,7 @@ textarea:not(:placeholder-shown) {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--portf-overlay-text);
