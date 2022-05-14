@@ -66,9 +66,100 @@
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p></p>
+              <form action="" autocomplete="off">
+                <h2 class="form-title">
+                  Оставьте свои данные, мы вам перезвоним
+                </h2>
+
+                <div class="section-input">
+                  <label for="user-name" class="labeled">Имя</label>
+
+                  <div class="input-area">
+                    <input
+                      type="name"
+                      name="username"
+                      id="user-name"
+                      placeholder=" "
+                      class="cccc"
+                    />
+
+                    <svg class="modal-icon" width="18" height="18">
+                      <use
+                        href="./images/symbol-defs.svg#icon-person-black"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="section-input">
+                  <label for="user-tel"> Телефон</label>
+                  <div class="input-area">
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="user-tel"
+                      placeholder=" "
+                    />
+                    <svg class="modal-icon" width="18" height="18">
+                      <use
+                        href="./images/symbol-defs.svg#icon-phone-black"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="section-input">
+                  <label for="user-email"> Почта</label>
+                  <div class="input-area">
+                    <input
+                      type="email"
+                      name="email"
+                      id="user-email"
+                      placeholder=" "
+                    />
+                    <svg class="modal-icon" width="18" height="18">
+                      <use
+                        href="./images/symbol-defs.svg#icon-email-black"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="section-input">
+                  <label for="feedback"> Комментарий</label>
+                  <div>
+                    <textarea
+                      name="feedback"
+                      rows="5"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="checkbox">
+                  <label class="checkbox-label">
+                    <input
+                      class="checkbox-input visually-hidden"
+                      type="checkbox"
+                      name="hobby"
+                      value="music"
+                    />
+                    <span class="checkbox-icon"
+                      ><svg class="check-icon" width="11" height="8">
+                        <use
+                          href="./images/symbol-defs222.svg#icon-Vector-2-1"
+                        ></use></svg></span
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Отправить</button>
+              </form>
               <button data-modal-close type="button" class="close-button">
-                <img src="./images/close.svg" alt="" />
+                <svg class="hghh">
+                  <use href="./images/symbol-defs11.svg#icon-close-black"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -480,12 +571,20 @@
         <ul class="footer-3 list">
           <li>
             <p class="footer-likkk-title">Подпишитесь на рассылку</p>
-            <form action="" class="form-mail">
-                <input type="email" class="input" name="email" id="email-studio" />
-                <label for="email" class="label" >E-mail</label>
-              <button type="submit">Подписаться<svg class="footer-icon-1">
-                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                  </svg></button>
+            <form action="" class="footer-form-mail" autocomplete="off">
+              <input
+                type="email"
+                class="input"
+                name="email"
+                id="email-studio"
+                placeholder=" "
+              />
+              <label for="email-studio" class="label">E-mail</label>
+              <button type="submit">
+                Подписаться<svg class="footer-icon-1">
+                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </form>
           </li>
         </ul>
