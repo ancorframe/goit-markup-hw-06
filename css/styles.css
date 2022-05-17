@@ -43,12 +43,12 @@
   --portf-overlay-bkgd-color: rgba(33, 150, 243, 0.9);
   --portf-overlay-text: #ffffff;
   --color-2196f3: #2196f3;
-  --color-212121:#212121;
-  --color-757575:#757575;
-  --color-ffffff:#ffffff;
-  --color-afb1b8:#afb1b8;
-  --color-0000001a:#0000001a;
-  --color-afb1b8:#afb1b8;
+  --color-212121: #212121;
+  --color-757575: #757575;
+  --color-ffffff: #ffffff;
+  --color-afb1b8: #afb1b8;
+  --color-0000001a: #0000001a;
+  --color-afb1b8: #afb1b8;
 }
 
 body {
@@ -59,9 +59,9 @@ body {
   padding: 0;
 }
 
-/* :focus-visible {
-    outline: #00000000 auto 1px;
-} */
+:focus-visible {
+  outline: none;
+}
 
 p,
 h1,
@@ -392,7 +392,12 @@ img {
   color: var(--color-212121);
 }
 
-.section-input label {
+.section-input {
+  margin-bottom: 10px;
+}
+
+.section-input label,
+.section-textarea label {
   display: inline-block;
   margin-bottom: 4px;
   font-family: "Roboto";
@@ -424,7 +429,6 @@ textarea {
 
 .input-area {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .modal-icon {
@@ -434,7 +438,7 @@ textarea {
   transform: translateY(-50%);
   z-index: -1;
 
-  transition-property:fill;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -444,6 +448,9 @@ textarea {
   height: 120px;
   resize: none;
   padding: 12px 16px;
+}
+
+.section-textarea {
   margin-bottom: 20px;
 }
 
@@ -453,19 +460,21 @@ textarea {
 }
 
 .checkbox-label {
+  position: relative;
   display: inline-block;
   margin-left: 36px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
-.checkbox-label a{
+.checkbox-label a {
   color: var(--color-2196f3);
 }
 
 .checkbox-icon {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: -22px;
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
@@ -475,7 +484,7 @@ textarea {
   align-items: center;
   cursor: pointer;
 
-  transition-property: border-color,background-color;
+  transition-property: border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -774,19 +783,17 @@ textarea:not(:placeholder-shown) {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-1 {
   margin-right: 70px;
 }
 
-.footer-2 {
-  margin-top: 12px;
-  margin-right: 93px;
-}
+
 
 .footer-3 {
-  margin-top: 12px;
+  margin-left: auto;
 }
 
 .footer-likkk-title {
@@ -1109,6 +1116,7 @@ textarea:not(:placeholder-shown) {
   color: var(--portf-overlay-text);
 }
 
-.portf-link:hover .overlay {
+.portf-link:hover .overlay,
+.portf-link:focus .overlay {
   transform: translateY(0);
 }
