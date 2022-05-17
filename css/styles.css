@@ -59,9 +59,9 @@ body {
   padding: 0;
 }
 
-:focus-visible {
+/* :focus-visible {
   outline: none;
-}
+} */
 
 p,
 h1,
